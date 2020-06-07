@@ -1,0 +1,66 @@
+/* Ajuste de telas, para smartphones, ou simplesmente diminuir a tela 
+sem prejudicar os objetos */ 
+
+@media (max-width: 900px) {
+    #page-home {
+        background-position-x: 70vw;
+    }
+
+    #page-home .content {
+        align-items: center;
+        text-align: center;
+    }
+
+    #page-home header a {
+        position: absolute;
+        bottom: 48px;
+
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #page-home main {
+        align-items: center;
+    }
+
+    #page-create-point .field-group {
+        flex-direction: column;
+    }
+
+    #page-create-point .field-group .field + .field {
+        margin-left: 0;
+    }
+
+}
+
+/* Adaptação para Iphone */
+
+@media (max-height:568px) {
+    #page-home .content {
+        align-items: center;
+        text-align: center;
+    }
+
+    #page-home main h1 {
+        font-size: 35px;
+        align-items: center;
+        text-align: center;
+    }
+
+    #page-home main p {
+        font-size: 20px;
+        align-items: center;
+        text-align: center;
+    }
+
+    #page-home main a {
+        align-items: center;
+        position: relative;
+        bottom: 30px;
+    }
+
+    #page-home header a {
+        position: absolute;
+        bottom: 25px;
+    }
+} 
